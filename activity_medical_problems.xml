@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MedicalProblems"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorners"
+        android:backgroundTint="@android:color/holo_red_light">
+
+        <TextView
+            android:id="@+id/xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What are you feeling right now?"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xy"
+            android:text="If you don't find here, not to worry just go back and\nselect your nearest hospital location to go."
+            android:textAlignment="center"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listOfProblems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundcorners"
+        android:backgroundTint="@color/md_blue_100"
+        android:dividerHeight="10dp"
+        android:padding="20dp" />
+
+</LinearLayout>
+
